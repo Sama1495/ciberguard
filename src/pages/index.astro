@@ -1,11 +1,921 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import '../styles/global.css';
 ---
 
-<Layout>
-	<Welcome />
-</Layout>
+<html lang="es">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width" />
+
+	<title>CyberGuard // AI Security Operator</title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+	<link
+		href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap"
+		rel="stylesheet"
+	/>
+</head>
+
+<body>
+
+<main>
+
+	<!-- ================= NAV ================= -->
+
+	<header class="nav">
+
+		<a class="logo" href="/">
+			CYBER<span>GUARD</span>
+		</a>
+
+		<nav>
+			<a href="#about">ABOUT</a>
+			<a href="#services">DEFENSE</a>
+			<a href="#system">SYSTEM</a>
+		</nav>
+
+		<div class="status">
+			<i></i>
+			ONLINE
+		</div>
+
+	</header>
+
+
+	<!-- ================= HERO ================= -->
+
+	<section class="hero" id="about">
+
+		<div class="hero-copy">
+
+			<p class="hello">
+				HOLA! SOY TU
+			</p>
+
+			<h1>
+				CYBER
+				<span>GUARD.</span>
+			</h1>
+
+			<h2>
+				AI SECURITY OPERATOR
+			</h2>
+
+			<p class="description">
+				Sistema inteligente de monitoreo, análisis y defensa
+				diseñado para proteger infraestructura Edge en tiempo real.
+			</p>
+
+			<a href="#system" class="cta">
+				ABRIR DASHBOARD
+				<span>↗</span>
+			</a>
+
+		</div>
+
+
+		<!-- AVATAR -->
+
+		<div class="avatar-zone">
+
+			<div class="star star-one">✦</div>
+			<div class="star star-two">✦</div>
+
+			<div class="avatar-bg"></div>
+
+			<img
+				src="/cyber-avatar.webp"
+				alt="CyberGuard Security Operator"
+				class="avatar"
+			/>
+
+			<div class="avatar-tag">
+				<span>CG //</span>
+				SECURITY OPERATOR
+			</div>
+
+		</div>
+
+
+		<!-- INFO -->
+
+		<div class="hero-info">
+
+			<span>CG / 001</span>
+
+			<p>
+				EDGE DEFENSE<br />
+				AI MONITORING<br />
+				REALTIME RESPONSE
+			</p>
+
+			<div class="coordinates">
+				NODE_01<br />
+				STATUS_ACTIVE
+			</div>
+
+		</div>
+
+	</section>
+
+
+	<!-- ================= SERVICES ================= -->
+
+	<section class="services" id="services">
+
+		<header class="section-title">
+
+			<span>01 //</span>
+
+			<h2>
+				LO QUE<br />
+				PROTEJO
+			</h2>
+
+			<div class="asterisk">✦</div>
+
+		</header>
+
+
+		<div class="cards">
+
+			<article>
+
+				<div class="card-top">
+					<span>01</span>
+					<span>↗</span>
+				</div>
+
+				<div class="icon">◉</div>
+
+				<h3>EDGE<br />DEFENSE</h3>
+
+				<p>
+					Protección de infraestructura distribuida
+					y nodos Edge.
+				</p>
+
+				<div class="tags">
+					<span>FIREWALL</span>
+					<span>EDGE</span>
+				</div>
+
+			</article>
+
+
+			<article>
+
+				<div class="card-top">
+					<span>02</span>
+					<span>↗</span>
+				</div>
+
+				<div class="icon">⌁</div>
+
+				<h3>THREAT<br />ENGINE</h3>
+
+				<p>
+					Detección automática de actividad
+					anómala y amenazas.
+				</p>
+
+				<div class="tags">
+					<span>AI</span>
+					<span>DETECTION</span>
+				</div>
+
+			</article>
+
+
+			<article>
+
+				<div class="card-top">
+					<span>03</span>
+					<span>↗</span>
+				</div>
+
+				<div class="icon">⌾</div>
+
+				<h3>NETWORK<br />MONITOR</h3>
+
+				<p>
+					Visibilidad continua del tráfico y
+					estado de la plataforma.
+				</p>
+
+				<div class="tags">
+					<span>LIVE</span>
+					<span>METRICS</span>
+				</div>
+
+			</article>
+
+		</div>
+
+	</section>
+
+
+	<!-- ================= SYSTEM ================= -->
+
+	<section class="system" id="system">
+
+		<div class="system-title">
+
+			<span>02 //</span>
+
+			<h2>MI SISTEMA</h2>
+
+			<p>
+				TODA LA INFRAESTRUCTURA,
+				UNA SOLA VISTA.
+			</p>
+
+		</div>
+
+
+		<div class="metrics">
+
+			<div>
+				<span>EDGE NODES</span>
+				<strong>08</strong>
+				<small>ONLINE</small>
+			</div>
+
+			<div>
+				<span>REQUESTS / SEC</span>
+				<strong>24.8K</strong>
+				<small>LIVE</small>
+			</div>
+
+			<div>
+				<span>THREATS BLOCKED</span>
+				<strong>1,284</strong>
+				<small>+18%</small>
+			</div>
+
+		</div>
+
+	</section>
+
+</main>
+
+</body>
+</html>
+
+
+<style is:global>
+
+:root {
+	--black: #070707;
+	--acid: #c8ff00;
+	--acid-dark: #8da800;
+	--white: #f4f4ef;
+	--gray: #999e97;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	margin: 0;
+	background: var(--black);
+	color: var(--white);
+	font-family: "Space Grotesk", sans-serif;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+main {
+	overflow: hidden;
+}
+
+
+/* ================= NAV ================= */
+
+.nav {
+	height: 90px;
+	max-width: 1450px;
+	margin: auto;
+
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	padding: 0 40px;
+}
+
+.logo {
+	font-weight: 700;
+	font-size: 18px;
+	letter-spacing: -.05em;
+}
+
+.logo span {
+	color: var(--acid);
+}
+
+.nav nav {
+	display: flex;
+	gap: 45px;
+}
+
+.nav nav a {
+	font-family: "Space Mono";
+	font-size: 10px;
+	color: #aaa;
+}
+
+.nav nav a:hover {
+	color: var(--acid);
+}
+
+.status {
+	font-family: "Space Mono";
+	font-size: 9px;
+}
+
+.status i {
+	display: inline-block;
+
+	width: 7px;
+	height: 7px;
+
+	border-radius: 50%;
+	background: var(--acid);
+
+	margin-right: 7px;
+
+	box-shadow:
+		0 0 12px var(--acid);
+}
+
+
+/* ================= HERO ================= */
+
+.hero {
+	min-height: 650px;
+
+	background: var(--acid);
+
+	color: var(--black);
+
+	display: grid;
+
+	grid-template-columns:
+		1fr
+		1.05fr
+		.4fr;
+
+	position: relative;
+}
+
+.hero-copy {
+	padding:
+		80px
+		30px
+		70px
+		max(40px, calc((100vw - 1370px) / 2));
+}
+
+.hello {
+	font-family: "Space Mono";
+	font-weight: 700;
+	font-size: 12px;
+
+	margin: 0 0 25px;
+}
+
+.hero h1 {
+	font-size:
+		clamp(75px, 8vw, 135px);
+
+	line-height: .75;
+	letter-spacing: -.085em;
+
+	margin: 0;
+
+	font-weight: 700;
+}
+
+.hero h1 span {
+	display: block;
+
+	color: transparent;
+
+	-webkit-text-stroke:
+		2px var(--black);
+
+	margin-top: 24px;
+}
+
+.hero h2 {
+	font-family: "Space Mono";
+	font-size: 13px;
+
+	letter-spacing: .08em;
+
+	margin-top: 45px;
+}
+
+.description {
+	max-width: 450px;
+
+	font-size: 14px;
+	line-height: 1.6;
+
+	font-weight: 500;
+}
+
+.cta {
+	margin-top: 25px;
+
+	display: inline-flex;
+	align-items: center;
+	justify-content: space-between;
+
+	gap: 70px;
+
+	padding: 18px 20px;
+
+	background: var(--black);
+	color: var(--white);
+
+	font-size: 11px;
+	font-weight: 700;
+
+	min-width: 235px;
+
+	transition:
+		transform .2s;
+}
+
+.cta:hover {
+	transform:
+		translate(-4px, -4px);
+}
+
+.cta span {
+	color: var(--acid);
+	font-size: 20px;
+}
+
+
+/* ================= AVATAR ================= */
+
+.avatar-zone {
+	position: relative;
+
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+
+	min-height: 650px;
+}
+
+.avatar-bg {
+	position: absolute;
+
+	width: 430px;
+	height: 430px;
+
+	border-radius:
+		50% 50% 44% 56% /
+		48% 44% 56% 52%;
+
+	background: var(--black);
+
+	bottom: 70px;
+
+	transform: rotate(-8deg);
+}
+
+.avatar-bg::before {
+	content: "";
+
+	position: absolute;
+
+	inset: 25px;
+
+	border:
+		1px solid
+		rgba(200,255,0,.5);
+
+	border-radius: inherit;
+}
+
+.avatar {
+	position: relative;
+
+	z-index: 2;
+
+	width: min(500px, 95%);
+
+	max-height: 600px;
+
+	object-fit: contain;
+
+	object-position: bottom;
+
+	filter:
+		drop-shadow(
+			20px 20px 0 rgba(0,0,0,.18)
+		);
+}
+
+.avatar-tag {
+	position: absolute;
+
+	z-index: 4;
+
+	right: 5%;
+	bottom: 65px;
+
+	background: var(--black);
+	color: white;
+
+	font-family: "Space Mono";
+	font-size: 9px;
+
+	padding: 12px 17px;
+}
+
+.avatar-tag span {
+	color: var(--acid);
+}
+
+.star {
+	position: absolute;
+
+	color: var(--black);
+
+	font-size: 65px;
+
+	z-index: 3;
+}
+
+.star-one {
+	top: 30px;
+	right: 20px;
+}
+
+.star-two {
+	bottom: 120px;
+	left: -20px;
+
+	font-size: 35px;
+}
+
+
+/* ================= HERO INFO ================= */
+
+.hero-info {
+	border-left:
+		1px solid
+		rgba(0,0,0,.3);
+
+	padding:
+		65px 25px;
+
+	font-family: "Space Mono";
+	font-size: 9px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.hero-info > span {
+	font-weight: bold;
+}
+
+.hero-info p {
+	line-height: 2;
+}
+
+.coordinates {
+	opacity: .6;
+}
+
+
+/* ================= SERVICES ================= */
+
+.services {
+	background: var(--black);
+
+	padding:
+		90px
+		max(40px, calc((100vw - 1370px) / 2));
+}
+
+.section-title {
+	display: flex;
+
+	align-items: flex-end;
+
+	gap: 30px;
+
+	margin-bottom: 55px;
+}
+
+.section-title span,
+.system-title > span {
+	color: var(--acid);
+
+	font-family: "Space Mono";
+
+	font-size: 10px;
+}
+
+.section-title h2 {
+	font-size:
+		clamp(40px, 5vw, 75px);
+
+	line-height: .85;
+
+	letter-spacing:
+		-.06em;
+
+	margin: 0;
+}
+
+.asterisk {
+	color: var(--acid);
+
+	font-size: 80px;
+
+	margin-left: 10px;
+}
+
+.cards {
+	display: grid;
+
+	grid-template-columns:
+		repeat(3, 1fr);
+
+	gap: 22px;
+}
+
+.cards article {
+	background: var(--acid);
+
+	color: var(--black);
+
+	padding: 30px;
+
+	min-height: 365px;
+
+	display: flex;
+	flex-direction: column;
+
+	transition:
+		transform .25s,
+		box-shadow .25s;
+}
+
+.cards article:hover {
+	transform:
+		translateY(-8px);
+
+	box-shadow:
+		8px 8px 0 white;
+}
+
+.card-top {
+	display: flex;
+
+	justify-content:
+		space-between;
+
+	font-family:
+		"Space Mono";
+
+	font-size: 10px;
+}
+
+.icon {
+	font-size: 55px;
+
+	margin-top: 30px;
+}
+
+.cards h3 {
+	font-size: 30px;
+
+	line-height: .9;
+
+	letter-spacing:
+		-.05em;
+
+	margin:
+		auto 0 15px;
+}
+
+.cards p {
+	font-size: 12px;
+
+	max-width: 280px;
+
+	line-height: 1.5;
+}
+
+.tags {
+	display: flex;
+	gap: 6px;
+
+	margin-top: 15px;
+}
+
+.tags span {
+	background: var(--black);
+	color: var(--acid);
+
+	font-family:
+		"Space Mono";
+
+	font-size: 7px;
+
+	padding: 6px 8px;
+}
+
+
+/* ================= SYSTEM ================= */
+
+.system {
+	background: var(--acid);
+
+	color: var(--black);
+
+	padding:
+		90px
+		max(40px, calc((100vw - 1370px) / 2));
+}
+
+.system-title {
+	display: grid;
+
+	grid-template-columns:
+		auto 1fr auto;
+
+	align-items: end;
+
+	gap: 30px;
+
+	margin-bottom: 60px;
+}
+
+.system-title h2 {
+	font-size:
+		clamp(50px, 7vw, 100px);
+
+	letter-spacing:
+		-.08em;
+
+	line-height: .8;
+
+	margin: 0;
+}
+
+.system-title p {
+	font-family:
+		"Space Mono";
+
+	font-size: 9px;
+
+	max-width: 160px;
+}
+
+.metrics {
+	display: grid;
+
+	grid-template-columns:
+		repeat(3,1fr);
+
+	border-top:
+		2px solid var(--black);
+
+	border-bottom:
+		2px solid var(--black);
+}
+
+.metrics > div {
+	padding:
+		30px 25px;
+
+	border-right:
+		1px solid
+		var(--black);
+}
+
+.metrics > div:last-child {
+	border-right: 0;
+}
+
+.metrics span {
+	font-family:
+		"Space Mono";
+
+	font-size: 8px;
+
+	display: block;
+}
+
+.metrics strong {
+	display: block;
+
+	font-size:
+		clamp(50px, 6vw, 90px);
+
+	letter-spacing:
+		-.07em;
+
+	line-height: 1;
+
+	margin:
+		15px 0;
+}
+
+.metrics small {
+	font-family:
+		"Space Mono";
+
+	font-size: 8px;
+
+	background:
+		var(--black);
+
+	color:
+		var(--acid);
+
+	padding:
+		5px 8px;
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 900px) {
+
+	.nav nav {
+		display: none;
+	}
+
+	.hero {
+		grid-template-columns: 1fr;
+	}
+
+	.hero-copy {
+		padding:
+			70px 25px
+			20px;
+	}
+
+	.avatar-zone {
+		min-height: 500px;
+	}
+
+	.avatar-bg {
+		width: 350px;
+		height: 350px;
+	}
+
+	.hero-info {
+		display: none;
+	}
+
+	.cards {
+		grid-template-columns: 1fr;
+	}
+
+	.cards article {
+		min-height: 310px;
+	}
+
+	.system-title {
+		grid-template-columns: 1fr;
+	}
+
+	.metrics {
+		grid-template-columns: 1fr;
+	}
+
+	.metrics > div {
+		border-right: 0;
+
+		border-bottom:
+			1px solid
+			var(--black);
+	}
+
+}
+
+</style>
